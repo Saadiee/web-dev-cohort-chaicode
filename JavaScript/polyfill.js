@@ -13,14 +13,25 @@
 
 
 // -----------Filter Polyfill------------------
-if(!Array.prototype.myFilter){
-    Array.prototype.myFilter = function(userFunc){
-        let result = []
-        for(let i = 0; i<this.length; i++){
-            if(userFunc(this[i], i, this)){
-                result.push(this[i])
-            }
-        }
-        return result;
-    }
-}
+// if(!Array.prototype.myFilter){
+//     Array.prototype.myFilter = function(userFunc){
+//         let result = []
+//         for(let i = 0; i<this.length; i++){
+//             if(userFunc(this[i], i, this)){
+//                 result.push(this[i])
+//             }
+//         }
+//         return result;
+//     }
+// }
+
+
+
+// -----------ForEach Polyfill------------------
+// if(!Array.prototype.myForEach){
+//     Array.prototype.myForEach = function(userFunc){
+//         for(let i = 0; i<this.length; i++){
+//             userFunc(this[i],i, this)
+//         }
+//     }
+// }
