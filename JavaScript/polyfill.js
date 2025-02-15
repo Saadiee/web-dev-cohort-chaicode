@@ -114,3 +114,20 @@ if(!Array.prototype.myEvery){
         return true;
     };
 }
+
+
+
+
+// -----------Include Polyfill------------------
+if (!Array.prototype.myIncludes) {
+    Array.prototype.myIncludes = function (val, startIndex = 0) {
+        if (startIndex < 0) startIndex = this.length + startIndex; // Handle negative indices
+        
+        for (let i = startIndex; i < this.length; i++) {
+            if (this[i] === val || (Number.isNaN(this[i]) && Number.isNaN(val))) { 
+                return true;
+            }
+        }
+        return false;
+    };
+}
