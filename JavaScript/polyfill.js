@@ -131,3 +131,17 @@ if (!Array.prototype.myIncludes) {
         return false;
     };
 }
+
+
+
+
+// -----------IndexOf Polyfill------------------
+if (!Array.prototype.myIndexOf) {
+    Array.prototype.myIndexOf = function (val, startIndex = 0) {
+        if(startIndex<0) startIndex = this.length + startIndex
+       for (let i = startIndex; i < this.length; i++) {
+        if(val === this[i]) return i;
+       }
+       return -1;
+    };
+}
