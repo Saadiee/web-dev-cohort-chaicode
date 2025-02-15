@@ -8,7 +8,6 @@ Welcome to the **Web Development Cohort – ChaiCode** repository! This reposito
 - [Repository Structure](#repository-structure)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -96,34 +95,6 @@ Ensure you have the following installed on your system:
    ```
 
    This will start the development server, and you can view the application in your browser.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions, improvements, or new ideas, please follow these steps:
-
-1. **Fork the repository**.
-
-2. **Create a new branch**:
-
-   ```bash
-   git checkout -b feature/YourFeatureName
-   ```
-
-3. **Commit your changes**:
-
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-
-4. **Push to the branch**:
-
-   ```bash
-   git push origin feature/YourFeatureName
-   ```
-
-5. **Open a Pull Request**.
-
-For detailed guidelines, refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
 
