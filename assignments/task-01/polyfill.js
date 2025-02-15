@@ -162,3 +162,20 @@ if (!Array.prototype.myLastIndexOf) {
        return -1;
     };
 }
+
+
+
+
+
+// -----------Join Polyfill------------------
+if(!Array.prototype.myJoin){
+    Array.prototype.myJoin = function(seperator = ","){
+        let result = "";
+        for (let i = 0; i < this.length; i++) {
+            if (this[i] !== undefined && this[i] !== null) {
+                result +=this[i];
+            }if(i< this.length - 1) result+= seperator;
+        return result;
+    };
+}
+}
