@@ -145,3 +145,20 @@ if (!Array.prototype.myIndexOf) {
        return -1;
     };
 }
+
+
+
+
+// -----------LastIndexOf Polyfill------------------
+if (!Array.prototype.myLastIndexOf) {
+    Array.prototype.myLastIndexOf = function (val, startIndex = this.length - 1) {
+        if (startIndex >= this.length) startIndex = this.length - 1;
+        if (startIndex < 0) startIndex = this.length + startIndex;
+
+        //right --> left loop
+       for (let i = startIndex; i >= 0; i--) {
+        if(this[i] === val) return i;
+       }
+       return -1;
+    };
+}
