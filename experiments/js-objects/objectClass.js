@@ -16,6 +16,7 @@ const person2 = new Person('John', 'Smith');
 
 
 
+
 //******** NOTES ********
 // class is blueprint for object
 // constructor includes all those properties that we want in that object. If we don't make a constructor in a class the JS runner/compiler/interrupter will make a 'default constructor' and leave it empty like 'constructor(){}'.
