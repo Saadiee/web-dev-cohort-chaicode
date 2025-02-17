@@ -8,7 +8,6 @@ Welcome to the **Web Development Cohort – ChaiCode** repository! This reposito
 - [Repository Structure](#repository-structure)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## About the Cohort
@@ -27,6 +26,8 @@ For more information about the cohort, visit the [official ChaiCode website](htt
 The repository is organized into the following directories:
 
 - **Assignments**: Contains tasks and exercises assigned during the cohort sessions.
+   - BMI Calculator
+   - Review Collector
 - **Projects**: Includes real-world applications and practice builds developed throughout the program.
 - **Experiments**: Features code snippets and explorations of new concepts and technologies.
 
@@ -95,10 +96,6 @@ Ensure you have the following installed on your system:
    ```
 
    This will start the development server, and you can view the application in your browser.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Acknowledgments
 
