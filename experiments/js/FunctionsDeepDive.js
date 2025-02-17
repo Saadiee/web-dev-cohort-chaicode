@@ -54,8 +54,8 @@ function createCounter(){
     }
 }
 let result1 = createCounter();
-console.log(result1); // OUTPUT: [Function (anonymous)]
-console.log(result1()); // OUTPUT: 1
+console.log(result1);       // OUTPUT: [Function (anonymous)]
+console.log(result1());     // OUTPUT: 1
 
 
 
