@@ -33,4 +33,3 @@ function calculateBMI() {
         remarks.style.color = "purple";
     }
 }
-
