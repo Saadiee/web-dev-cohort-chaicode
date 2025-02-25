@@ -40,6 +40,7 @@ let expenses = [
   { description: "Internet Bill", amount: 50, category: "Utilities" },
 ];
 
+
 let expenseReport = expenses.reduce(
   (report, expense) => {
     report[expense.category] += expense.amount;

@@ -22,6 +22,11 @@ let config = (function () {
   return settings;
 })();
 
+
+
+// "Call & Bind" 
+
+
 let person1 = {
   personsName: "ravi",
   greet: function () {
