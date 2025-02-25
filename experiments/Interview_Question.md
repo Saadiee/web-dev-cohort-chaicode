@@ -4,6 +4,20 @@ If micro tasks keep popping up without allowing other tasks a chance to run, wha
 ---
 ### Q: Hoisting❓
 JavaScript Hoisting refers to the process whereby the interpreter **appears** to move the declaration of **functions**, **variables**, **classes**, or **imports** to the top of their scope, prior to execution of the code.
+Yes, both `const` and `let` are **hoisted**, but they behave differently from `var`.  
+
+### **Hoisting Behavior of `let` and `const`**
+- **They are hoisted to the top of their scope,** just like `var`.
+- **They are not initialized automatically,** unlike `var`, which gets initialized with `undefined`.
+- **They are in a "Temporal Dead Zone" (TDZ)** from the start of their enclosing scope until the line where they are declared.
+
+---
+### **Key Differences Between `var`, `let`, and `const` Hoisting**
+| Keyword | Hoisted? | Initialized? | Temporal Dead Zone? |
+|---------|---------|-------------|----------------------|
+| `var`   | ✅ Yes  | ✅ `undefined` | ❌ No |
+| `let`   | ✅ Yes  | ❌ No (TDZ) | ✅ Yes |
+| `const` | ✅ Yes  | ❌ No (TDZ) | ✅ Yes |
 
 ---
 
