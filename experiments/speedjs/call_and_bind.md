@@ -73,5 +73,3 @@ serveDinner("Coffee");
 | You want to **set `this` explicitly** | ✅ Yes | ✅ Yes |
 
 ---
-
-Would you like a `.apply()` example with this scenario as well? 🚀
