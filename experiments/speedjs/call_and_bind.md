@@ -36,6 +36,7 @@ serveCustomer.call(waiter2, "Pizza", "Juice");
 ### **📌 Why `.call()`?**
 - **We need immediate execution.**
 - **We explicitly set `this` to `Ali` or `Ahmed`.**
+- **When we need to pass context from one object to another.**
 - **The function runs instantly with the given arguments.**
 
 ---
