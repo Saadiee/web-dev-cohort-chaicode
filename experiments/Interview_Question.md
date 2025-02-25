@@ -29,4 +29,7 @@ Yes, both `const` and `let` are **hoisted**, but they behave differently from `v
 ---
 ### Q: Difference b/w Prototype & __proto__❓
 ---
+### Q: Proxy in JS❓
+
+---
 ### Q: ❓
