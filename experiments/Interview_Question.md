@@ -21,15 +21,25 @@ Yes, both `const` and `let` are **hoisted**, but they behave differently from `v
 
 ---
 
+### Q: Does JS has the capability for network calling?❓
+No, JS doesn't have the capability for network calling.
+
+---
 ### Q: Event Loop does not exist. Can you write one from scratch❓
+
 ---
 ### Q: Promise does not exist. Can you write one from scratch❓
+
 ---
 ### Q: Sequence of HTML, CSS, JS loading in browser❓
+
 ---
 ### Q: Difference b/w Prototype & __proto__❓
+
 ---
 ### Q: Proxy in JS❓
 
+
 ---
+
 ### Q: ❓
