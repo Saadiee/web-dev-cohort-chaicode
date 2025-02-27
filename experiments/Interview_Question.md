@@ -25,6 +25,14 @@ Yes, both `const` and `let` are **hoisted**, but they behave differently from `v
 No, JS doesn't have the capability for network calling.
 
 ---
+### Q: What is promisification❓
+Converting legacy callback code to support promises
+
+---
+### Q: Promise Polyfill (Advanced Topic)❓
+
+
+---
 ### Q: Event Loop does not exist. Can you write one from scratch❓
 
 ---
@@ -41,8 +49,8 @@ No, JS doesn't have the capability for network calling.
 
 
 ---
-### Q: What is promisification❓
-Converting legacy callback code to support promises
+### Q: Nullish coalescing❓
+
 
 ---
 ### Q: ❓
