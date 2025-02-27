@@ -53,6 +53,10 @@ Converting legacy callback code to support promises
 
 
 ---
+### Q: Closure & Lexical Scope❓
+
+
+---
 ### Q: ❓
 
 
