@@ -41,5 +41,11 @@ No, JS doesn't have the capability for network calling.
 
 
 ---
+### Q: What is promisification❓
+Converting legacy callback code to support promises
 
+---
 ### Q: ❓
+
+
+---
