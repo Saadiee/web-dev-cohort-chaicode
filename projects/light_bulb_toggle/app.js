@@ -5,8 +5,7 @@ const body = document.getElementById('body');
 
 let isOn = false;
 
-
-toggleButton.addEventListener('click', function() {
+function toggleLight() {
   
   isOn = !isOn;
   
@@ -16,11 +15,16 @@ toggleButton.addEventListener('click', function() {
     body.classList.add('light-on');
     statusText.textContent = 'Status: On';
     toggleButton.textContent = 'Turn Off';
+    body.classList.remove('dark-mode');
+
   } else {
     bulb.classList.remove('on');
     bulb.classList.add('off');
     body.classList.remove('light-on');
+    body.classList.add('dark-mode');
     statusText.textContent = 'Status: Off';
     toggleButton.textContent = 'Turn On';
   }
-});
+}
+toggleLight();
+toggleButton.addEventListener('click',toggleLight);
