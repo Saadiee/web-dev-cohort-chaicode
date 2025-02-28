@@ -57,6 +57,14 @@ Converting legacy callback code to support promises
 
 
 ---
+### Q: Debouncing❓
+
+
+---
+### Q: Throttling❓
+
+
+---
 ### Q: ❓
 
 

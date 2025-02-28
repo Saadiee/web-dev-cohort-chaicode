@@ -1,7 +1,9 @@
-const ptaNhi = (fn, delay) => {
+const throttle = (fn, delay) => {
     let myId = null
-    
+
     return (...args) => {
+    console.log(args)
+
         if(myId === null){
             fn(...args);
             myId = setTimeout(() => {
@@ -11,6 +13,4 @@ const ptaNhi = (fn, delay) => {
     }
 }
 
-ptaNhi()
-ptaNhi()
-ptaNhi()
+throttle(()=>{console.log(1)},300)()
