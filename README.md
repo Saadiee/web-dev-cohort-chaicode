@@ -28,6 +28,10 @@ The repository is organized into the following directories:
 - **Assignments**: Contains tasks and exercises assigned during the cohort sessions.
    - BMI Calculator
    - Review Collector
+   - Real-time Form Input Display
+   - Todo App
+   - Light Bulb Toggle
+   - Text Color Changer
 - **Projects**: Includes real-world applications and practice builds developed throughout the program.
 - **Experiments**: Features code snippets and explorations of new concepts and technologies.
 
