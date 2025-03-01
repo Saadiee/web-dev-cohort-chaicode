@@ -32,6 +32,7 @@ The repository is organized into the following directories:
    - Todo App
    - Light Bulb Toggle
    - Text Color Changer
+   - Image Carousel
 - **Projects**: Includes real-world applications and practice builds developed throughout the program.
 - **Experiments**: Features code snippets and explorations of new concepts and technologies.
 
