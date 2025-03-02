@@ -29,6 +29,11 @@ No, JS doesn't have the capability for network calling.
 Converting legacy callback code to support promises
 
 ---
+### Q: What is Closure Function❓
+Function binded by its lexical scope
+
+
+---
 ### Q: Promise Polyfill (Advanced Topic)❓
 
 
@@ -66,6 +71,7 @@ Converting legacy callback code to support promises
 
 ---
 ### Q: ❓
+
 
 
 ---
