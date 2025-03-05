@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    position: relative;
+}
+.board-container{
+    display: flex;
+    /* height: 100vh; */
+    padding: 30px 20px;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.board{
+    height: 80vh;
+    border: 1px solid black;
+    padding-bottom: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 19px 17px 0px -7px rgba(0,0,0,1);
+    overflow-y: scroll;
+    h2{
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+.board-description{
+    margin-left: 15px;
+    color: #747373;
+    font-weight: 700;
+}
+.task-item{
+    width: 90%;
+    padding: 15px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 12px 12px 0px -7px rgba(0,0,0,1);
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    p{
+        font-weight: 600;
+        text-overflow: clip;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.del-btn{
+    padding: 1px 4px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.del-btn:hover,.addTask-btn:hover{
+    color: white;
+    background-color: black;
+}
+.addTask-btn{
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.addBoard-btn{
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 99px;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.addBoard-btn:hover{
+    color: white;
+    background-color: black;
+}
+.numberOfTasks{
+    font-size: .8rem;
+    color: #747373;
+    border: 1px solid #747373;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
