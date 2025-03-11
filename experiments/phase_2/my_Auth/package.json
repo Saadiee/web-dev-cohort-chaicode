@@ -1,13 +1,13 @@
 {
-  "name": "fullstack",
+  "name": "my_auth",
   "version": "1.0.0",
-  "description": "a node project for authentication",
+  "description": "Authenticator in Express",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js"
   },
-  "author": "hiteshchoudhary",
+  "author": "Saad Ur Rehman",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
