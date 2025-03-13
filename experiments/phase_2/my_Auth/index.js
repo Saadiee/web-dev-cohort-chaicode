@@ -19,6 +19,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
+// Home Route
 app.get("/", (req, res) => {
   res.send(`<h1>Welcome to Home Page</h1>`);
 });
