@@ -2,6 +2,8 @@ import User from "../model/User.model.js"
 import crypto from 'crypto'
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
+import bcrypt from "bcryptjs"
+import jwt from "jsonwebtoken"
 
 dotenv.config();
 
@@ -110,4 +112,45 @@ const verifyUser = async(req, res) => {
     res.status(200).json({message:"Email verification successfull"})
 }
 
-export {registerUser, verifyUser}
+const loginUser = async(req, res) => {
+
+    const {name, email, password} = req.body;
+    if (!name || !email || !password) {return res.status(400).json({message: "All fields are required"})}
+
+    try {
+        const user = await User.findOne({email});
+        if(!user)
+            {return res.status(400).json({message: "Invalid email or password"})}
+        // compare password
+        const isMatch = await bcrypt.compare(password, user.password);
+        if(!isMatch)
+            {return res.status(400).json({message: "Invalid email or password"})}
+        if(!user.isVerified)
+            {return res.status(400).json({message: "Please verify your email adress"})}
+
+        // Integrating JWT
+        const jwtToken = jwt.sign({id: user.id}, process.env.JWT_SECRET, {expiresIn: '24h'})
+        // creating JWT cookie
+        const cookieOpt = {
+            httpOnly: true,
+            secure: true,
+            maxAge: 24*60*60*1000,
+        }
+        res.cookie("test", jwtToken, cookieOpt)
+
+        res.status(200).json({
+            success: true,
+            message: "Login sucessfull",
+            user: {
+                id: user._id,
+                name: user.name,
+                role: user.role
+            }
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export {registerUser, verifyUser, loginUser}
