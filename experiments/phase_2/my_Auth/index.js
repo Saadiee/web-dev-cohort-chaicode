@@ -31,9 +31,6 @@ app.get("/", (req, res) => {
 app.use('/api/v1/users', userRoutes)
 
 
-
-
-
 db().then(() => {
   app.listen(port, () => {
       console.log(`🚀 Server running on http://localhost:${port}`);
